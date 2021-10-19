@@ -1,6 +1,7 @@
 ./input
 input
-
+baseline_code/submission/*
+baseline_code/saved/*
 # Created by https://www.toptal.com/developers/gitignore/api/linux,macos,windows,jupyternotebooks,pycharm,visualstudiocode,visualstudio
 # Edit at https://www.toptal.com/developers/gitignore?templates=linux,macos,windows,jupyternotebooks,pycharm,visualstudiocode,visualstudio
 
