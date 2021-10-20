@@ -6,6 +6,9 @@ from tqdm import tqdm
 from util.JsonConfig import JsonConfig
 from dataset import *
 
+import argparse
+import pathlib
+
 def getModel(model, model_path, device):
     # best model 저장된 경로
     # model_path = './saved/fcn8s/FCN_8_epoch_20'
@@ -73,12 +76,30 @@ def saveCSV(model, test_loader, device, filename):
     submission.to_csv(filename, index=False)
     
 if __name__ == '__main__':
-    cfg = JsonConfig(file_path='./config/__base__.json')
+    parser = argparse.ArgumentParser(description='config file path')
+    parser.add_argument(
+        '--config', 
+        type=pathlib.Path,
+        default='./config/__base__.json'
+    )
+    parser.add_argument(
+        '--model', 
+        type=pathlib.Path,
+        default='./saved/Unet-resnet50/Unet-resnet50_10_0.439'
+    )
+    parser.add_argument(
+        '--output', 
+        type=pathlib.Path,
+        default="./submission/submission.csv"
+    )
+    args = parser.parse_args()
+    
+    cfg = JsonConfig(file_path=args.config)
     device = "cuda" if torch.cuda.is_available() else "cpu"
     
     model = getModel(
         model = cfg.model,
-        model_path = './saved/Unet-resnet50/Unet-resnet50_10_0.439',
+        model_path = args.model,
         device = device
     )
     test_loader = loadDataLoader(
@@ -90,6 +111,6 @@ if __name__ == '__main__':
         model=model, 
         test_loader=test_loader, 
         device=device,
-        filename="./unet-resnet50.csv"
+        filename=args.output
     )
     

@@ -18,7 +18,8 @@ class Train():
     def train(self, optimizer, saved_dir, filename, saveWandb=False):
         print(f'Start training..')
         n_class = 11
-        best_loss = 9999999
+        # best_loss = 9999999
+        best_mIoU = 0
 
         for epoch in range(self.num_epochs):
             self.model.train()
@@ -55,10 +56,10 @@ class Train():
 
             # validation 주기에 따른 loss 출력 및 best model 저장
             avrg_loss, val_mIoU, IoU_by_class = self.validation(epoch+1)
-            if avrg_loss < best_loss:
+            if val_mIoU > best_mIoU:
                 print(f"Best performance at epoch: {epoch + 1}")
                 print(f"Save model in {saved_dir}")
-                best_loss = avrg_loss
+                best_mIoU = val_mIoU
                 self.save_model(saved_dir, file_name=f"{filename}_{epoch+1}_{round(val_mIoU,3)}.pth")
             print()
             if saveWandb:
@@ -68,8 +69,7 @@ class Train():
                     mIoU=round(mIoU,4), 
                     val_loss=round(avrg_loss.item(),4), 
                     val_mIoU=round(val_mIoU,4), 
-                    IoU_by_class=IoU_by_class,
-                    summary=avrg_loss < best_loss
+                    IoU_by_class=IoU_by_class
                 )
                 
 

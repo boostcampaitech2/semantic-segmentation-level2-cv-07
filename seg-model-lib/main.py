@@ -8,6 +8,7 @@ from train import Train
 
 from util.JsonConfig import JsonConfig
 import argparse
+import pathlib
 import wandb
 from wandb_function import wandbInit
 
@@ -64,5 +65,13 @@ def main(cfg):
     
 
 if __name__ == '__main__':
-    cfg = JsonConfig(file_path='./config/__base__.json')
+    parser = argparse.ArgumentParser(description='config file path')
+    parser.add_argument(
+        '--config', 
+        type=pathlib.Path,
+        default='./config/__base__.json'
+    )
+    args = parser.parse_args()
+    
+    cfg = JsonConfig(file_path=args.config)
     main(cfg)
