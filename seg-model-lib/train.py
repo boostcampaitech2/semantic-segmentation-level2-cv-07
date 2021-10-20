@@ -59,7 +59,7 @@ class Train():
                 print(f"Best performance at epoch: {epoch + 1}")
                 print(f"Save model in {saved_dir}")
                 best_loss = avrg_loss
-                self.save_model(saved_dir, file_name=f"{filename}_{epoch+1}_{val_mIoU:03}")
+                self.save_model(saved_dir, file_name=f"{filename}_{epoch+1}_{round(val_mIoU,3)}.pth")
             print()
             if saveWandb:
                 wandbWrite(

@@ -74,7 +74,7 @@ def get_classname(classID, cats):
 def collate_fn(batch):
     return tuple(zip(*batch))
 
-def loadDataLoader(dataset_path, batch_size=8):
+def loadDataLoader(dataset_path, batch_size=8, num_workers=2, train=True):
     train_path = dataset_path + '/train.json'
     val_path = dataset_path + '/val.json'
     test_path = dataset_path + '/test.json'
@@ -95,21 +95,24 @@ def loadDataLoader(dataset_path, batch_size=8):
     val_dataset = CustomDataset(dataset_path, val_path, mode='val', transform=val_transform)
     test_dataset = CustomDataset(dataset_path, test_path, mode='test', transform=test_transform)
     
-    train_loader = DataLoader(dataset=train_dataset, 
-                                           batch_size=batch_size,
-                                           shuffle=True,
-                                           num_workers=4,
-                                           collate_fn=collate_fn,
-                                           drop_last=True)
+    if train:
+        train_loader = DataLoader(dataset=train_dataset, 
+                                   batch_size=batch_size,
+                                   shuffle=True,
+                                   num_workers=num_workers,
+                                   collate_fn=collate_fn,
+                                   drop_last=True)
 
-    val_loader = DataLoader(dataset=val_dataset, 
-                                             batch_size=batch_size,
-                                             shuffle=False,
-                                             num_workers=4,
-                                             collate_fn=collate_fn)
-
-    test_loader = DataLoader(dataset=test_dataset,
-                                              batch_size=batch_size,
-                                              num_workers=4,
-                                              collate_fn=collate_fn)
-    return train_loader, val_loader, test_loader
+        val_loader = DataLoader(dataset=val_dataset, 
+                                 batch_size=batch_size,
+                                 shuffle=False,
+                                 num_workers=num_workers,
+                                 collate_fn=collate_fn)
+        return train_loader, val_loader
+    
+    else:
+        test_loader = DataLoader(dataset=test_dataset,
+                                  batch_size=batch_size,
+                                  num_workers=num_workers,
+                                  collate_fn=collate_fn)
+        return test_loader

@@ -28,9 +28,10 @@ def main(cfg):
     category_names = ('Backgroud', 'General trash', 'Paper', 'Paper pack', 'Metal', 'Glass',
                       'Plastic', 'Styrofoam', 'Plastic bag', 'Battery', 'Clothing')
     
-    train_loader, val_loader, test_loader = loadDataLoader(
+    train_loader, val_loader = loadDataLoader(
         dataset_path=cfg.dataset_path, 
-        batch_size=8
+        batch_size=cfg.batch,
+        num_workers=cfg.num_workers
     )
     criterion = nn.CrossEntropyLoss()
     
