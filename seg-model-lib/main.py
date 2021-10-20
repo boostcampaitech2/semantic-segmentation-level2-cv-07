@@ -4,10 +4,12 @@ import random
 from torch import nn
 
 from dataset import *
-from train import train
+from train import Train
 
 from util.JsonConfig import JsonConfig
 import argparse
+import wandb
+from wandb_function import wandbInit
 
 
 def init_seed(random_seed = 2021):
@@ -33,18 +35,31 @@ def main(cfg):
     criterion = nn.CrossEntropyLoss()
     
     optimizer = torch.optim.Adam(params = cfg.model.parameters(), lr = cfg.lr, weight_decay=cfg.weight_decay)
-    train(
+    
+    if 'wandb' in cfg:
+        wandbInit(
+            project=cfg.wandb.project, 
+            config=cfg, 
+            run_name=cfg.wandb.run_name
+        )
+    T = Train(
         num_epochs=cfg.epoch, 
-        classes=category_names,
+        classes=category_names, 
         model=cfg.model, 
-        data_loader=train_loader, 
+        train_loader=train_loader, 
         val_loader=val_loader, 
         criterion=criterion, 
+        device=device
+    )
+    T.train(
         optimizer=optimizer, 
         saved_dir=cfg.saved_dir,
         filename=cfg.filename,
-        device=device
+        saveWandb='wandb' in cfg
     )
+    
+    if 'wandb' in cfg:
+        wandb.finish()
     
 
 if __name__ == '__main__':

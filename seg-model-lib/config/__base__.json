@@ -11,7 +11,12 @@
     "dataset_path": "/opt/ml/segmentation/input/data",
     "saved_dir": "saved/Unet-resnet50",
     "filename": "Unet-resnet50",
-    "epoch": 30,
+    "epoch": 40,
     "lr": 0.0001,
-    "weight_decay": 1e-6
+    "weight_decay": 1e-6,
+    
+    "wandb": {
+        "project": "Semantic-Segmentation",
+        "run_name": "Unet-resnet50"
+    }
 }
