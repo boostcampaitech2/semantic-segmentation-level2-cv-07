@@ -1,7 +1,7 @@
 ##########################################################
 ##################### model settings######################
 ##########################################################
-norm_cfg = dict(type='SyncBN', requires_grad=True)
+norm_cfg = dict(type='BN', requires_grad=True)
 model = dict(
     type='EncoderDecoder',
     pretrained=None,
@@ -49,16 +49,17 @@ model = dict(
             type='CrossEntropyLoss', use_sigmoid=False, loss_weight=0.4)),
     # model training and testing settings
     train_cfg=dict(),
-    test_cfg=dict(mode='slide', crop_size=256, stride=170))
+    test_cfg=dict(mode='slide', crop_size=(256,256), stride=(170,170)))
+    # test_cfg=dict(mode='whole'))
+    # test_cfg=dict())
+
 
 ##########################################################
 ################## dataset settings#######################
 ##########################################################
-dataset_type = 'RepeatDataset'
+dataset_type = 'COCOCustom'
 data_root = '../input/mmseg'
-classes_list =  ("Backgroud", "General trash", "Paper", "Paper pack",
-                    "Metal", "Glass", "Plastic", "Styrofoam",
-                    "Plastic bag", "Battery", "Clothing")
+
 img_norm_cfg = dict(
     mean=[123.675, 116.28, 103.53], std=[58.395, 57.12, 57.375], to_rgb=True)
 img_scale = (512, 512)
@@ -95,31 +96,26 @@ data = dict(
     samples_per_gpu=4,
     workers_per_gpu=4,
     train=dict(
-        type='RepeatDataset',
-        times=40000,
-        dataset=dict(
-            type=dataset_type,
-            data_root=data_root,
-            img_dir='/img_dir/train',
-            ann_dir='/ann_dir/train',
-            classes = classes_list,
-            pipeline=train_pipeline)),
+        type=dataset_type,
+        data_root=data_root,
+        img_dir='img_dir/train',
+        ann_dir='ann_imwrite/train',
+        pipeline=train_pipeline),
     val=dict(
         type=dataset_type,
         data_root=data_root,
-        img_dir='/img_dir/val',
-        ann_dir='/ann_dir/val',
-        classes = classes_list,
+        img_dir='img_dir/val',
+        ann_dir='ann_imwrite/val',
         pipeline=test_pipeline),
     test=dict(
         type=dataset_type,
+        test_mode=True,
         data_root=data_root,
-        img_dir='/img_dir/test',
-        classes = classes_list,
+        img_dir='img_dir/test',
         pipeline=test_pipeline))
 
 ##########################################################
-################## runtime settings#######################
+################## runtime settings #######################
 ##########################################################
 # yapf:disable
 log_config = dict(
@@ -141,9 +137,9 @@ resume_from = None
 workflow = [('train', 1)]
 cudnn_benchmark = True
 
-##########################################################
-################## runtime settings#######################
-##########################################################
+############################################################
+################### runtime settings #######################
+############################################################
 # optimizer
 optimizer = dict(type='SGD', lr=0.01, momentum=0.9, weight_decay=0.0005)
 optimizer_config = dict()
