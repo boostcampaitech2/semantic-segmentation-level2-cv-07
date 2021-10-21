@@ -1,0 +1,24 @@
+{
+    "debug": false,
+    "seed": 2021,
+    "model": {
+        "name": "Unet",
+        "encoder_name": "resnet50",
+        "encoder_weights": "imagenet",
+        "in_channels": 3,
+        "classes": 11
+    },
+    "dataset_path": "/opt/ml/segmentation/input/data",
+    "saved_dir": "saved/Unet-resnet50",
+    "filename": "Unet-resnet50",
+    "epoch": 40,
+    "lr": 0.0001,
+    "weight_decay": 1e-6,
+    "batch": 8,
+    "num_workers": 4,
+    
+    "wandb": {
+        "project": "Semantic-Segmentation",
+        "run_name": "Unet-resnet50"
+    }
+}
