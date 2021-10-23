@@ -1,0 +1,6 @@
+log/
+saved/
+wandb/
+submission/
+.ipynb_checkpoints/
+__pycache__/
