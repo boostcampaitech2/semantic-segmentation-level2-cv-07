@@ -11,7 +11,9 @@ def JsonConfig(file_path):
     models = {
         'UneXt50': UneXt50,
         'UneXt50Enc3': UneXt50Enc3,
-        'UneXt50SWSL': UneXt50SWSL
+        'UneXt50SWSL': UneXt50SWSL,
+        'UneXt101': UneXt101,
+        'UneXt50Bicubic': UneXt50Bicubic
     }
     cfg.model = models[cfg.model_name]
             
