@@ -1,0 +1,24 @@
+{
+    "debug": false,
+    "seed": 2021,
+    "model": {
+        "name": "PAN",
+        "encoder_name": "resnet50",
+        "encoder_weights": "imagenet",
+        "in_channels": 3,
+        "classes": 11
+    },
+    "dataset_path": "/opt/ml/segmentation/input/data",
+    "saved_dir": "saved/PAN-resnet50",
+    "filename": "PAN-resnet50",
+    "epoch": 100,
+    "lr": 1e-5,
+    "weight_decay": 1e-6,
+    "batch": 16,
+    "num_workers": 4,
+    
+    "wandb": {
+        "project": "Semantic-Segmentation",
+        "run_name": "PAN-resnet50"
+    }
+}
