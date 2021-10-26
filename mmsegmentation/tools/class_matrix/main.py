@@ -5,7 +5,7 @@ from mmcv import Config
 from mmcv.runner import load_checkpoint
 from mmcv.parallel import MMDataParallel
 from confusion_matrix import getConfusionMatrix
-from sklearn.metrics import ConfusionMatrixDisplay
+import seaborn as sns
 import matplotlib.pyplot as plt
 
 import argparse
@@ -20,7 +20,7 @@ sys.path.append('../../')
 from mmseg.datasets import build_dataloader, build_dataset
 from mmseg.models import build_segmentor
 
-def __main__(config_path, checkpoint_path, output_img):
+def __main__(config_path, checkpoint_path, output_img, vmin, vmax):
     cfg = Config.fromfile(config_path)
 
     if 'pretrained' in cfg.model:
@@ -53,9 +53,13 @@ def __main__(config_path, checkpoint_path, output_img):
 
     # Viz
     fig, ax = plt.subplots(figsize=(20, 20))
-    disp = ConfusionMatrixDisplay(confusion_matrix=confusion_matrix,
-                                  display_labels=CLASSES)
-    disp.plot(ax=ax, values_format='')
+    sns.heatmap(
+        confusion_matrix, vmin=vmin, vmax=vmax,
+        annot=True, fmt="d",
+        cmap='viridis',
+        xticklabels=CLASSES, yticklabels=CLASSES,
+        ax=ax
+    )
     plt.savefig(output_img)
     
 if __name__ == '__main__':
@@ -75,10 +79,22 @@ if __name__ == '__main__':
         type=pathlib.Path,
         default='./saved/hrnet.png'
     )
+    parser.add_argument(
+        '--vmin', 
+        type=int,
+        default=0
+    )
+    parser.add_argument(
+        '--vmax', 
+        type=int,
+        default=1000000
+    )
     args = parser.parse_args()
     
     __main__(
         config_path=args.config, 
         checkpoint_path=args.checkpoint, 
-        output_img=args.output
+        output_img=args.output,
+        vmin=args.vmin,
+        vmax=args.vmax
     )

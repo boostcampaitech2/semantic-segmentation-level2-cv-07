@@ -8,3 +8,4 @@ python main.py \
 - `--config`: config file path
 - `--checkpoint`: checkpoint file path(`.pth`)
 - `--output`: output file path/name (`.png`)
+- `--vmin`, `--vmax`: change color bar range(\[int] default: vmin=0, vmax=1000000)
