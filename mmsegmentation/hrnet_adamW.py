@@ -81,7 +81,7 @@ cfg.log_config = dict(
         dict(type='TextLoggerHook'),
         dict(type='EpochWandbLogger',
         init_kwargs=dict(
-            project='Swin_seg_mmseg',
+            project='segmentation',
             name='hr_net_adamW_0.0001'))
 ])
 cfg.workflow = [('train', 1),('val',1)]
