@@ -1,0 +1,18 @@
+{
+    "debug": false,
+    "seed": 2021,
+    "dataset_path": "/opt/ml/segmentation/input/data",
+    "saved_dir": "saved/Unet-resnet50-Bicubic",
+    "filename": "Unext-resnext50-bicubic",
+    "epoch": 100,
+    "lr": 1e-5,
+    "weight_decay": 1e-6,
+    "batch": 16,
+    "num_workers": 4,
+    "model_name": "UneXt50Bicubic",
+    
+    "wandb": {
+        "project": "Semantic-Segmentation",
+        "run_name": "Unext-resnext50-bicubic"
+    }
+}

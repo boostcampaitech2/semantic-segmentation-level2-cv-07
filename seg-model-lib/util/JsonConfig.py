@@ -11,7 +11,8 @@ def JsonConfig(file_path):
         'Unet': smp.Unet, 'UnetPlusPlus': smp.UnetPlusPlus, 'Linknet': smp.Linknet, 'FPN': smp.FPN, 
         'PSPNet': smp.PSPNet, 'DeepLabV3': smp.DeepLabV3, 'DeepLabV3Plus': smp.DeepLabV3Plus, 'PAN': smp.PAN
     }
-    model = models[cfg.model.name](
+    model = smp.create_model(
+        arch=cfg.model.name,
         encoder_name=cfg.model.encoder_name,
         encoder_weights=cfg.model.encoder_weights,
         in_channels=cfg.model.in_channels,

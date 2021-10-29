@@ -1,0 +1,7 @@
+{
+    "start": 0,
+    "end": 16,
+    "input_dir": "/opt/ml/segmentation/input/data/",
+    "pred_csv": "/opt/ml/semantic-segmentation-level2-cv-07/seg-model-lib/submission/unet_resnet50.csv",
+    "output_path": "output-deeplab.png"
+}
