@@ -13,33 +13,31 @@ import numpy as np
 import json
 
 
-cfg = Config.fromfile('deeplabv4_unet_s5-d16.py')
+# cfg = Config.fromfile('hrnet.py')
+cfg = Config.fromfile('swin_ocr.py')
+
 
 epoch = 'latest'
+# epoch = 'epoch_37'
 cfg.seed=2021
 cfg.gpu_ids = [0]
-
-cfg.work_dir = './work_dirs/test'
-
+cfg.work_dir = '/opt/ml/semantic-segmentation-level2-cv-07/mmsegmentation/work_dirs/swin_ocr_multi_scale_103020'
+# /work_dirs/swin_ocr_multi_scale_103020/latest.pth
 checkpoint_path = os.path.join(cfg.work_dir, f'{epoch}.pth')
 
 dataset = build_dataset(cfg.data.test)
-
+# cfg.data.samples_per_gpu=1
+# cfg.data.workers_per_gpu=1
 data_loader = build_dataloader(
         dataset,
-        samples_per_gpu=1,
+        samples_per_gpu=cfg.data.samples_per_gpu,
         workers_per_gpu=cfg.data.workers_per_gpu,
         dist=False,
         shuffle=False)
 
-model = build_segmentor(cfg.model)
-
-model.CLASSES = ("Backgroud", "General trash", "Paper", "Paper pack",
-                    "Metal", "Glass", "Plastic", "Styrofoam",
-                    "Plastic bag", "Battery", "Clothing")
-
 model = build_segmentor(cfg.model, test_cfg=cfg.get('test_cfg'))
 checkpoint = load_checkpoint(model, checkpoint_path, map_location='cpu')
+model.CLASSES = dataset.CLASSES
 
 model = MMDataParallel(model.cuda(), device_ids=[0])
 
@@ -54,7 +52,7 @@ with open(json_dir, "r", encoding="utf8") as outfile:
 input_size = 512
 output_size = 256
 bin_size = input_size // output_size
-		
+
 # PredictionString 대입
 for image_id, predict in enumerate(output):
     image_id = datas["images"][image_id]

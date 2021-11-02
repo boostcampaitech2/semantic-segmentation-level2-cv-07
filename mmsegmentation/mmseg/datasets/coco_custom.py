@@ -4,11 +4,9 @@ from .custom import CustomDataset
 
 @DATASETS.register_module()
 class COCOCustom(CustomDataset):
-
-    CLASSES = ("Backgroud", "General trash", "Paper", "Paper pack",
+    CLASSES = ["Backgroud", "General trash", "Paper", "Paper pack",
                     "Metal", "Glass", "Plastic", "Styrofoam",
-                    "Plastic bag", "Battery", "Clothing")
-
+                    "Plastic bag", "Battery", "Clothing"]
     PALETTE = [[0, 0, 0],
                 [192, 0, 128],
                 [0, 128, 192],
@@ -20,8 +18,8 @@ class COCOCustom(CustomDataset):
                 [192, 192, 128],
                 [64, 64, 128],
                 [128, 0, 192]]
-    # PALETTE = [[0],[1],[2],[3],[4],[5],[6],[7],[8],[9],[10]]
 
+    reduce_zero_label=False
 
     def __init__(self, **kwargs):
         super(COCOCustom, self).__init__(

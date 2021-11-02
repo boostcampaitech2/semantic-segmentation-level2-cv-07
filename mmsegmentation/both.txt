@@ -1,0 +1,42 @@
+2021-10-29 07:12:13,490 - mmseg - INFO - Loaded 2617 images
+2021-10-29 07:12:13,506 - mmseg - INFO - Loaded 655 images
+Traceback (most recent call last):
+  File "/opt/conda/envs/segmentation/lib/python3.7/site-packages/mmcv/utils/registry.py", line 52, in build_from_cfg
+    return obj_cls(**args)
+  File "/opt/ml/semantic-segmentation-level2-cv-07/mmsegmentation/mmseg/models/backbones/swin.py", line 551, in __init__
+    'init_cfg and pretrained cannot be specified at the same time'
+AssertionError: init_cfg and pretrained cannot be specified at the same time
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/conda/envs/segmentation/lib/python3.7/site-packages/mmcv/utils/registry.py", line 52, in build_from_cfg
+    return obj_cls(**args)
+  File "/opt/ml/semantic-segmentation-level2-cv-07/mmsegmentation/mmseg/models/segmentors/cascade_encoder_decoder.py", line 39, in __init__
+    init_cfg=init_cfg)
+  File "/opt/ml/semantic-segmentation-level2-cv-07/mmsegmentation/mmseg/models/segmentors/encoder_decoder.py", line 36, in __init__
+    self.backbone = builder.build_backbone(backbone)
+  File "/opt/ml/semantic-segmentation-level2-cv-07/mmsegmentation/mmseg/models/builder.py", line 20, in build_backbone
+    return BACKBONES.build(cfg)
+  File "/opt/conda/envs/segmentation/lib/python3.7/site-packages/mmcv/utils/registry.py", line 212, in build
+    return self.build_func(*args, **kwargs, registry=self)
+  File "/opt/conda/envs/segmentation/lib/python3.7/site-packages/mmcv/cnn/builder.py", line 27, in build_model_from_cfg
+    return build_from_cfg(cfg, registry, default_args)
+  File "/opt/conda/envs/segmentation/lib/python3.7/site-packages/mmcv/utils/registry.py", line 55, in build_from_cfg
+    raise type(e)(f'{obj_cls.__name__}: {e}')
+AssertionError: SwinTransformer: init_cfg and pretrained cannot be specified at the same time
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "train.py", line 30, in <module>
+    model = build_segmentor(cfg.model)
+  File "/opt/ml/semantic-segmentation-level2-cv-07/mmsegmentation/mmseg/models/builder.py", line 49, in build_segmentor
+    cfg, default_args=dict(train_cfg=train_cfg, test_cfg=test_cfg))
+  File "/opt/conda/envs/segmentation/lib/python3.7/site-packages/mmcv/utils/registry.py", line 212, in build
+    return self.build_func(*args, **kwargs, registry=self)
+  File "/opt/conda/envs/segmentation/lib/python3.7/site-packages/mmcv/cnn/builder.py", line 27, in build_model_from_cfg
+    return build_from_cfg(cfg, registry, default_args)
+  File "/opt/conda/envs/segmentation/lib/python3.7/site-packages/mmcv/utils/registry.py", line 55, in build_from_cfg
+    raise type(e)(f'{obj_cls.__name__}: {e}')
+AssertionError: CascadeEncoderDecoder: SwinTransformer: init_cfg and pretrained cannot be specified at the same time

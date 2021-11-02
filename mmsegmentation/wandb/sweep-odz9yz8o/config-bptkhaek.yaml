@@ -1,0 +1,8 @@
+wandb_version: 1
+
+drop_rate_fcn:
+  value: 5
+drop_rate_ocr:
+  value: 4
+drop_rate_swin:
+  value: 8

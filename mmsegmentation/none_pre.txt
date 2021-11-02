@@ -1,0 +1,1545 @@
+2021-10-29 04:21:05,723 - mmseg - INFO - Loaded 2617 images
+2021-10-29 04:21:05,737 - mmseg - INFO - Loaded 655 images
+2021-10-29 04:21:06,886 - mmseg - WARNING - No pre-trained weights for SwinTransformer, training start from scratch
+2021-10-29 04:21:06,911 - mmseg - INFO - 
+backbone.patch_embed.projection.weight - torch.Size([128, 3, 4, 4]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,912 - mmseg - INFO - 
+backbone.patch_embed.projection.bias - torch.Size([128]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,912 - mmseg - INFO - 
+backbone.patch_embed.norm.weight - torch.Size([128]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,912 - mmseg - INFO - 
+backbone.patch_embed.norm.bias - torch.Size([128]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,912 - mmseg - INFO - 
+backbone.stages.0.blocks.0.norm1.weight - torch.Size([128]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,912 - mmseg - INFO - 
+backbone.stages.0.blocks.0.norm1.bias - torch.Size([128]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,912 - mmseg - INFO - 
+backbone.stages.0.blocks.0.attn.w_msa.relative_position_bias_table - torch.Size([529, 4]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,912 - mmseg - INFO - 
+backbone.stages.0.blocks.0.attn.w_msa.qkv.weight - torch.Size([384, 128]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,912 - mmseg - INFO - 
+backbone.stages.0.blocks.0.attn.w_msa.qkv.bias - torch.Size([384]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,912 - mmseg - INFO - 
+backbone.stages.0.blocks.0.attn.w_msa.proj.weight - torch.Size([128, 128]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,912 - mmseg - INFO - 
+backbone.stages.0.blocks.0.attn.w_msa.proj.bias - torch.Size([128]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,912 - mmseg - INFO - 
+backbone.stages.0.blocks.0.norm2.weight - torch.Size([128]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,913 - mmseg - INFO - 
+backbone.stages.0.blocks.0.norm2.bias - torch.Size([128]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,913 - mmseg - INFO - 
+backbone.stages.0.blocks.0.ffn.layers.0.0.weight - torch.Size([512, 128]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,913 - mmseg - INFO - 
+backbone.stages.0.blocks.0.ffn.layers.0.0.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,913 - mmseg - INFO - 
+backbone.stages.0.blocks.0.ffn.layers.1.weight - torch.Size([128, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,913 - mmseg - INFO - 
+backbone.stages.0.blocks.0.ffn.layers.1.bias - torch.Size([128]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,913 - mmseg - INFO - 
+backbone.stages.0.blocks.1.norm1.weight - torch.Size([128]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,913 - mmseg - INFO - 
+backbone.stages.0.blocks.1.norm1.bias - torch.Size([128]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,913 - mmseg - INFO - 
+backbone.stages.0.blocks.1.attn.w_msa.relative_position_bias_table - torch.Size([529, 4]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,913 - mmseg - INFO - 
+backbone.stages.0.blocks.1.attn.w_msa.qkv.weight - torch.Size([384, 128]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,913 - mmseg - INFO - 
+backbone.stages.0.blocks.1.attn.w_msa.qkv.bias - torch.Size([384]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,913 - mmseg - INFO - 
+backbone.stages.0.blocks.1.attn.w_msa.proj.weight - torch.Size([128, 128]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,913 - mmseg - INFO - 
+backbone.stages.0.blocks.1.attn.w_msa.proj.bias - torch.Size([128]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,913 - mmseg - INFO - 
+backbone.stages.0.blocks.1.norm2.weight - torch.Size([128]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,913 - mmseg - INFO - 
+backbone.stages.0.blocks.1.norm2.bias - torch.Size([128]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,913 - mmseg - INFO - 
+backbone.stages.0.blocks.1.ffn.layers.0.0.weight - torch.Size([512, 128]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,913 - mmseg - INFO - 
+backbone.stages.0.blocks.1.ffn.layers.0.0.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,913 - mmseg - INFO - 
+backbone.stages.0.blocks.1.ffn.layers.1.weight - torch.Size([128, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,913 - mmseg - INFO - 
+backbone.stages.0.blocks.1.ffn.layers.1.bias - torch.Size([128]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,914 - mmseg - INFO - 
+backbone.stages.0.downsample.norm.weight - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,914 - mmseg - INFO - 
+backbone.stages.0.downsample.norm.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,914 - mmseg - INFO - 
+backbone.stages.0.downsample.reduction.weight - torch.Size([256, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,914 - mmseg - INFO - 
+backbone.stages.1.blocks.0.norm1.weight - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,914 - mmseg - INFO - 
+backbone.stages.1.blocks.0.norm1.bias - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,914 - mmseg - INFO - 
+backbone.stages.1.blocks.0.attn.w_msa.relative_position_bias_table - torch.Size([529, 8]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,914 - mmseg - INFO - 
+backbone.stages.1.blocks.0.attn.w_msa.qkv.weight - torch.Size([768, 256]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,914 - mmseg - INFO - 
+backbone.stages.1.blocks.0.attn.w_msa.qkv.bias - torch.Size([768]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,914 - mmseg - INFO - 
+backbone.stages.1.blocks.0.attn.w_msa.proj.weight - torch.Size([256, 256]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,914 - mmseg - INFO - 
+backbone.stages.1.blocks.0.attn.w_msa.proj.bias - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,914 - mmseg - INFO - 
+backbone.stages.1.blocks.0.norm2.weight - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,914 - mmseg - INFO - 
+backbone.stages.1.blocks.0.norm2.bias - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,914 - mmseg - INFO - 
+backbone.stages.1.blocks.0.ffn.layers.0.0.weight - torch.Size([1024, 256]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,914 - mmseg - INFO - 
+backbone.stages.1.blocks.0.ffn.layers.0.0.bias - torch.Size([1024]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,914 - mmseg - INFO - 
+backbone.stages.1.blocks.0.ffn.layers.1.weight - torch.Size([256, 1024]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,914 - mmseg - INFO - 
+backbone.stages.1.blocks.0.ffn.layers.1.bias - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,914 - mmseg - INFO - 
+backbone.stages.1.blocks.1.norm1.weight - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,914 - mmseg - INFO - 
+backbone.stages.1.blocks.1.norm1.bias - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,914 - mmseg - INFO - 
+backbone.stages.1.blocks.1.attn.w_msa.relative_position_bias_table - torch.Size([529, 8]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,914 - mmseg - INFO - 
+backbone.stages.1.blocks.1.attn.w_msa.qkv.weight - torch.Size([768, 256]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,914 - mmseg - INFO - 
+backbone.stages.1.blocks.1.attn.w_msa.qkv.bias - torch.Size([768]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,914 - mmseg - INFO - 
+backbone.stages.1.blocks.1.attn.w_msa.proj.weight - torch.Size([256, 256]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,915 - mmseg - INFO - 
+backbone.stages.1.blocks.1.attn.w_msa.proj.bias - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,915 - mmseg - INFO - 
+backbone.stages.1.blocks.1.norm2.weight - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,915 - mmseg - INFO - 
+backbone.stages.1.blocks.1.norm2.bias - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,915 - mmseg - INFO - 
+backbone.stages.1.blocks.1.ffn.layers.0.0.weight - torch.Size([1024, 256]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,915 - mmseg - INFO - 
+backbone.stages.1.blocks.1.ffn.layers.0.0.bias - torch.Size([1024]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,915 - mmseg - INFO - 
+backbone.stages.1.blocks.1.ffn.layers.1.weight - torch.Size([256, 1024]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,915 - mmseg - INFO - 
+backbone.stages.1.blocks.1.ffn.layers.1.bias - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,915 - mmseg - INFO - 
+backbone.stages.1.downsample.norm.weight - torch.Size([1024]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,915 - mmseg - INFO - 
+backbone.stages.1.downsample.norm.bias - torch.Size([1024]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,915 - mmseg - INFO - 
+backbone.stages.1.downsample.reduction.weight - torch.Size([512, 1024]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,915 - mmseg - INFO - 
+backbone.stages.2.blocks.0.norm1.weight - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,915 - mmseg - INFO - 
+backbone.stages.2.blocks.0.norm1.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,915 - mmseg - INFO - 
+backbone.stages.2.blocks.0.attn.w_msa.relative_position_bias_table - torch.Size([529, 16]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,915 - mmseg - INFO - 
+backbone.stages.2.blocks.0.attn.w_msa.qkv.weight - torch.Size([1536, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,915 - mmseg - INFO - 
+backbone.stages.2.blocks.0.attn.w_msa.qkv.bias - torch.Size([1536]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,915 - mmseg - INFO - 
+backbone.stages.2.blocks.0.attn.w_msa.proj.weight - torch.Size([512, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,916 - mmseg - INFO - 
+backbone.stages.2.blocks.0.attn.w_msa.proj.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,916 - mmseg - INFO - 
+backbone.stages.2.blocks.0.norm2.weight - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,916 - mmseg - INFO - 
+backbone.stages.2.blocks.0.norm2.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,916 - mmseg - INFO - 
+backbone.stages.2.blocks.0.ffn.layers.0.0.weight - torch.Size([2048, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,916 - mmseg - INFO - 
+backbone.stages.2.blocks.0.ffn.layers.0.0.bias - torch.Size([2048]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,916 - mmseg - INFO - 
+backbone.stages.2.blocks.0.ffn.layers.1.weight - torch.Size([512, 2048]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,916 - mmseg - INFO - 
+backbone.stages.2.blocks.0.ffn.layers.1.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,916 - mmseg - INFO - 
+backbone.stages.2.blocks.1.norm1.weight - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,916 - mmseg - INFO - 
+backbone.stages.2.blocks.1.norm1.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,916 - mmseg - INFO - 
+backbone.stages.2.blocks.1.attn.w_msa.relative_position_bias_table - torch.Size([529, 16]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,916 - mmseg - INFO - 
+backbone.stages.2.blocks.1.attn.w_msa.qkv.weight - torch.Size([1536, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,916 - mmseg - INFO - 
+backbone.stages.2.blocks.1.attn.w_msa.qkv.bias - torch.Size([1536]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,916 - mmseg - INFO - 
+backbone.stages.2.blocks.1.attn.w_msa.proj.weight - torch.Size([512, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,916 - mmseg - INFO - 
+backbone.stages.2.blocks.1.attn.w_msa.proj.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,916 - mmseg - INFO - 
+backbone.stages.2.blocks.1.norm2.weight - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,916 - mmseg - INFO - 
+backbone.stages.2.blocks.1.norm2.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,917 - mmseg - INFO - 
+backbone.stages.2.blocks.1.ffn.layers.0.0.weight - torch.Size([2048, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,917 - mmseg - INFO - 
+backbone.stages.2.blocks.1.ffn.layers.0.0.bias - torch.Size([2048]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,917 - mmseg - INFO - 
+backbone.stages.2.blocks.1.ffn.layers.1.weight - torch.Size([512, 2048]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,917 - mmseg - INFO - 
+backbone.stages.2.blocks.1.ffn.layers.1.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,917 - mmseg - INFO - 
+backbone.stages.2.blocks.2.norm1.weight - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,917 - mmseg - INFO - 
+backbone.stages.2.blocks.2.norm1.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,917 - mmseg - INFO - 
+backbone.stages.2.blocks.2.attn.w_msa.relative_position_bias_table - torch.Size([529, 16]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,917 - mmseg - INFO - 
+backbone.stages.2.blocks.2.attn.w_msa.qkv.weight - torch.Size([1536, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,917 - mmseg - INFO - 
+backbone.stages.2.blocks.2.attn.w_msa.qkv.bias - torch.Size([1536]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,917 - mmseg - INFO - 
+backbone.stages.2.blocks.2.attn.w_msa.proj.weight - torch.Size([512, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,917 - mmseg - INFO - 
+backbone.stages.2.blocks.2.attn.w_msa.proj.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,917 - mmseg - INFO - 
+backbone.stages.2.blocks.2.norm2.weight - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,917 - mmseg - INFO - 
+backbone.stages.2.blocks.2.norm2.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,917 - mmseg - INFO - 
+backbone.stages.2.blocks.2.ffn.layers.0.0.weight - torch.Size([2048, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,917 - mmseg - INFO - 
+backbone.stages.2.blocks.2.ffn.layers.0.0.bias - torch.Size([2048]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,917 - mmseg - INFO - 
+backbone.stages.2.blocks.2.ffn.layers.1.weight - torch.Size([512, 2048]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,917 - mmseg - INFO - 
+backbone.stages.2.blocks.2.ffn.layers.1.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,918 - mmseg - INFO - 
+backbone.stages.2.blocks.3.norm1.weight - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,918 - mmseg - INFO - 
+backbone.stages.2.blocks.3.norm1.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,918 - mmseg - INFO - 
+backbone.stages.2.blocks.3.attn.w_msa.relative_position_bias_table - torch.Size([529, 16]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,918 - mmseg - INFO - 
+backbone.stages.2.blocks.3.attn.w_msa.qkv.weight - torch.Size([1536, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,918 - mmseg - INFO - 
+backbone.stages.2.blocks.3.attn.w_msa.qkv.bias - torch.Size([1536]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,918 - mmseg - INFO - 
+backbone.stages.2.blocks.3.attn.w_msa.proj.weight - torch.Size([512, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,918 - mmseg - INFO - 
+backbone.stages.2.blocks.3.attn.w_msa.proj.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,918 - mmseg - INFO - 
+backbone.stages.2.blocks.3.norm2.weight - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,918 - mmseg - INFO - 
+backbone.stages.2.blocks.3.norm2.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,918 - mmseg - INFO - 
+backbone.stages.2.blocks.3.ffn.layers.0.0.weight - torch.Size([2048, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,918 - mmseg - INFO - 
+backbone.stages.2.blocks.3.ffn.layers.0.0.bias - torch.Size([2048]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,918 - mmseg - INFO - 
+backbone.stages.2.blocks.3.ffn.layers.1.weight - torch.Size([512, 2048]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,918 - mmseg - INFO - 
+backbone.stages.2.blocks.3.ffn.layers.1.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,918 - mmseg - INFO - 
+backbone.stages.2.blocks.4.norm1.weight - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,918 - mmseg - INFO - 
+backbone.stages.2.blocks.4.norm1.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,918 - mmseg - INFO - 
+backbone.stages.2.blocks.4.attn.w_msa.relative_position_bias_table - torch.Size([529, 16]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,918 - mmseg - INFO - 
+backbone.stages.2.blocks.4.attn.w_msa.qkv.weight - torch.Size([1536, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,919 - mmseg - INFO - 
+backbone.stages.2.blocks.4.attn.w_msa.qkv.bias - torch.Size([1536]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,919 - mmseg - INFO - 
+backbone.stages.2.blocks.4.attn.w_msa.proj.weight - torch.Size([512, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,919 - mmseg - INFO - 
+backbone.stages.2.blocks.4.attn.w_msa.proj.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,919 - mmseg - INFO - 
+backbone.stages.2.blocks.4.norm2.weight - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,919 - mmseg - INFO - 
+backbone.stages.2.blocks.4.norm2.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,919 - mmseg - INFO - 
+backbone.stages.2.blocks.4.ffn.layers.0.0.weight - torch.Size([2048, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,919 - mmseg - INFO - 
+backbone.stages.2.blocks.4.ffn.layers.0.0.bias - torch.Size([2048]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,919 - mmseg - INFO - 
+backbone.stages.2.blocks.4.ffn.layers.1.weight - torch.Size([512, 2048]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,919 - mmseg - INFO - 
+backbone.stages.2.blocks.4.ffn.layers.1.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,919 - mmseg - INFO - 
+backbone.stages.2.blocks.5.norm1.weight - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,919 - mmseg - INFO - 
+backbone.stages.2.blocks.5.norm1.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,919 - mmseg - INFO - 
+backbone.stages.2.blocks.5.attn.w_msa.relative_position_bias_table - torch.Size([529, 16]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,919 - mmseg - INFO - 
+backbone.stages.2.blocks.5.attn.w_msa.qkv.weight - torch.Size([1536, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,919 - mmseg - INFO - 
+backbone.stages.2.blocks.5.attn.w_msa.qkv.bias - torch.Size([1536]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,919 - mmseg - INFO - 
+backbone.stages.2.blocks.5.attn.w_msa.proj.weight - torch.Size([512, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,919 - mmseg - INFO - 
+backbone.stages.2.blocks.5.attn.w_msa.proj.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,919 - mmseg - INFO - 
+backbone.stages.2.blocks.5.norm2.weight - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,919 - mmseg - INFO - 
+backbone.stages.2.blocks.5.norm2.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,920 - mmseg - INFO - 
+backbone.stages.2.blocks.5.ffn.layers.0.0.weight - torch.Size([2048, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,920 - mmseg - INFO - 
+backbone.stages.2.blocks.5.ffn.layers.0.0.bias - torch.Size([2048]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,920 - mmseg - INFO - 
+backbone.stages.2.blocks.5.ffn.layers.1.weight - torch.Size([512, 2048]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,920 - mmseg - INFO - 
+backbone.stages.2.blocks.5.ffn.layers.1.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,920 - mmseg - INFO - 
+backbone.stages.2.blocks.6.norm1.weight - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,920 - mmseg - INFO - 
+backbone.stages.2.blocks.6.norm1.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,920 - mmseg - INFO - 
+backbone.stages.2.blocks.6.attn.w_msa.relative_position_bias_table - torch.Size([529, 16]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,920 - mmseg - INFO - 
+backbone.stages.2.blocks.6.attn.w_msa.qkv.weight - torch.Size([1536, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,920 - mmseg - INFO - 
+backbone.stages.2.blocks.6.attn.w_msa.qkv.bias - torch.Size([1536]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,920 - mmseg - INFO - 
+backbone.stages.2.blocks.6.attn.w_msa.proj.weight - torch.Size([512, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,920 - mmseg - INFO - 
+backbone.stages.2.blocks.6.attn.w_msa.proj.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,920 - mmseg - INFO - 
+backbone.stages.2.blocks.6.norm2.weight - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,920 - mmseg - INFO - 
+backbone.stages.2.blocks.6.norm2.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,920 - mmseg - INFO - 
+backbone.stages.2.blocks.6.ffn.layers.0.0.weight - torch.Size([2048, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,920 - mmseg - INFO - 
+backbone.stages.2.blocks.6.ffn.layers.0.0.bias - torch.Size([2048]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,921 - mmseg - INFO - 
+backbone.stages.2.blocks.6.ffn.layers.1.weight - torch.Size([512, 2048]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,921 - mmseg - INFO - 
+backbone.stages.2.blocks.6.ffn.layers.1.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,921 - mmseg - INFO - 
+backbone.stages.2.blocks.7.norm1.weight - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,921 - mmseg - INFO - 
+backbone.stages.2.blocks.7.norm1.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,921 - mmseg - INFO - 
+backbone.stages.2.blocks.7.attn.w_msa.relative_position_bias_table - torch.Size([529, 16]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,921 - mmseg - INFO - 
+backbone.stages.2.blocks.7.attn.w_msa.qkv.weight - torch.Size([1536, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,921 - mmseg - INFO - 
+backbone.stages.2.blocks.7.attn.w_msa.qkv.bias - torch.Size([1536]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,921 - mmseg - INFO - 
+backbone.stages.2.blocks.7.attn.w_msa.proj.weight - torch.Size([512, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,921 - mmseg - INFO - 
+backbone.stages.2.blocks.7.attn.w_msa.proj.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,921 - mmseg - INFO - 
+backbone.stages.2.blocks.7.norm2.weight - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,921 - mmseg - INFO - 
+backbone.stages.2.blocks.7.norm2.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,921 - mmseg - INFO - 
+backbone.stages.2.blocks.7.ffn.layers.0.0.weight - torch.Size([2048, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,921 - mmseg - INFO - 
+backbone.stages.2.blocks.7.ffn.layers.0.0.bias - torch.Size([2048]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,921 - mmseg - INFO - 
+backbone.stages.2.blocks.7.ffn.layers.1.weight - torch.Size([512, 2048]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,921 - mmseg - INFO - 
+backbone.stages.2.blocks.7.ffn.layers.1.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,921 - mmseg - INFO - 
+backbone.stages.2.blocks.8.norm1.weight - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,921 - mmseg - INFO - 
+backbone.stages.2.blocks.8.norm1.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,921 - mmseg - INFO - 
+backbone.stages.2.blocks.8.attn.w_msa.relative_position_bias_table - torch.Size([529, 16]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,921 - mmseg - INFO - 
+backbone.stages.2.blocks.8.attn.w_msa.qkv.weight - torch.Size([1536, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,921 - mmseg - INFO - 
+backbone.stages.2.blocks.8.attn.w_msa.qkv.bias - torch.Size([1536]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,922 - mmseg - INFO - 
+backbone.stages.2.blocks.8.attn.w_msa.proj.weight - torch.Size([512, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,922 - mmseg - INFO - 
+backbone.stages.2.blocks.8.attn.w_msa.proj.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,922 - mmseg - INFO - 
+backbone.stages.2.blocks.8.norm2.weight - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,922 - mmseg - INFO - 
+backbone.stages.2.blocks.8.norm2.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,922 - mmseg - INFO - 
+backbone.stages.2.blocks.8.ffn.layers.0.0.weight - torch.Size([2048, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,922 - mmseg - INFO - 
+backbone.stages.2.blocks.8.ffn.layers.0.0.bias - torch.Size([2048]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,922 - mmseg - INFO - 
+backbone.stages.2.blocks.8.ffn.layers.1.weight - torch.Size([512, 2048]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,922 - mmseg - INFO - 
+backbone.stages.2.blocks.8.ffn.layers.1.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,922 - mmseg - INFO - 
+backbone.stages.2.blocks.9.norm1.weight - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,922 - mmseg - INFO - 
+backbone.stages.2.blocks.9.norm1.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,922 - mmseg - INFO - 
+backbone.stages.2.blocks.9.attn.w_msa.relative_position_bias_table - torch.Size([529, 16]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,922 - mmseg - INFO - 
+backbone.stages.2.blocks.9.attn.w_msa.qkv.weight - torch.Size([1536, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,922 - mmseg - INFO - 
+backbone.stages.2.blocks.9.attn.w_msa.qkv.bias - torch.Size([1536]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,923 - mmseg - INFO - 
+backbone.stages.2.blocks.9.attn.w_msa.proj.weight - torch.Size([512, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,923 - mmseg - INFO - 
+backbone.stages.2.blocks.9.attn.w_msa.proj.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,923 - mmseg - INFO - 
+backbone.stages.2.blocks.9.norm2.weight - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,923 - mmseg - INFO - 
+backbone.stages.2.blocks.9.norm2.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,923 - mmseg - INFO - 
+backbone.stages.2.blocks.9.ffn.layers.0.0.weight - torch.Size([2048, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,923 - mmseg - INFO - 
+backbone.stages.2.blocks.9.ffn.layers.0.0.bias - torch.Size([2048]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,923 - mmseg - INFO - 
+backbone.stages.2.blocks.9.ffn.layers.1.weight - torch.Size([512, 2048]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,923 - mmseg - INFO - 
+backbone.stages.2.blocks.9.ffn.layers.1.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,923 - mmseg - INFO - 
+backbone.stages.2.blocks.10.norm1.weight - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,923 - mmseg - INFO - 
+backbone.stages.2.blocks.10.norm1.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,923 - mmseg - INFO - 
+backbone.stages.2.blocks.10.attn.w_msa.relative_position_bias_table - torch.Size([529, 16]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,923 - mmseg - INFO - 
+backbone.stages.2.blocks.10.attn.w_msa.qkv.weight - torch.Size([1536, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,923 - mmseg - INFO - 
+backbone.stages.2.blocks.10.attn.w_msa.qkv.bias - torch.Size([1536]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,923 - mmseg - INFO - 
+backbone.stages.2.blocks.10.attn.w_msa.proj.weight - torch.Size([512, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,923 - mmseg - INFO - 
+backbone.stages.2.blocks.10.attn.w_msa.proj.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,923 - mmseg - INFO - 
+backbone.stages.2.blocks.10.norm2.weight - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,923 - mmseg - INFO - 
+backbone.stages.2.blocks.10.norm2.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,923 - mmseg - INFO - 
+backbone.stages.2.blocks.10.ffn.layers.0.0.weight - torch.Size([2048, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,923 - mmseg - INFO - 
+backbone.stages.2.blocks.10.ffn.layers.0.0.bias - torch.Size([2048]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,924 - mmseg - INFO - 
+backbone.stages.2.blocks.10.ffn.layers.1.weight - torch.Size([512, 2048]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,924 - mmseg - INFO - 
+backbone.stages.2.blocks.10.ffn.layers.1.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,924 - mmseg - INFO - 
+backbone.stages.2.blocks.11.norm1.weight - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,924 - mmseg - INFO - 
+backbone.stages.2.blocks.11.norm1.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,924 - mmseg - INFO - 
+backbone.stages.2.blocks.11.attn.w_msa.relative_position_bias_table - torch.Size([529, 16]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,924 - mmseg - INFO - 
+backbone.stages.2.blocks.11.attn.w_msa.qkv.weight - torch.Size([1536, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,924 - mmseg - INFO - 
+backbone.stages.2.blocks.11.attn.w_msa.qkv.bias - torch.Size([1536]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,924 - mmseg - INFO - 
+backbone.stages.2.blocks.11.attn.w_msa.proj.weight - torch.Size([512, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,924 - mmseg - INFO - 
+backbone.stages.2.blocks.11.attn.w_msa.proj.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,924 - mmseg - INFO - 
+backbone.stages.2.blocks.11.norm2.weight - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,924 - mmseg - INFO - 
+backbone.stages.2.blocks.11.norm2.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,924 - mmseg - INFO - 
+backbone.stages.2.blocks.11.ffn.layers.0.0.weight - torch.Size([2048, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,924 - mmseg - INFO - 
+backbone.stages.2.blocks.11.ffn.layers.0.0.bias - torch.Size([2048]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,924 - mmseg - INFO - 
+backbone.stages.2.blocks.11.ffn.layers.1.weight - torch.Size([512, 2048]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,924 - mmseg - INFO - 
+backbone.stages.2.blocks.11.ffn.layers.1.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,924 - mmseg - INFO - 
+backbone.stages.2.blocks.12.norm1.weight - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,924 - mmseg - INFO - 
+backbone.stages.2.blocks.12.norm1.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,924 - mmseg - INFO - 
+backbone.stages.2.blocks.12.attn.w_msa.relative_position_bias_table - torch.Size([529, 16]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,924 - mmseg - INFO - 
+backbone.stages.2.blocks.12.attn.w_msa.qkv.weight - torch.Size([1536, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,924 - mmseg - INFO - 
+backbone.stages.2.blocks.12.attn.w_msa.qkv.bias - torch.Size([1536]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,925 - mmseg - INFO - 
+backbone.stages.2.blocks.12.attn.w_msa.proj.weight - torch.Size([512, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,925 - mmseg - INFO - 
+backbone.stages.2.blocks.12.attn.w_msa.proj.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,925 - mmseg - INFO - 
+backbone.stages.2.blocks.12.norm2.weight - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,925 - mmseg - INFO - 
+backbone.stages.2.blocks.12.norm2.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,925 - mmseg - INFO - 
+backbone.stages.2.blocks.12.ffn.layers.0.0.weight - torch.Size([2048, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,925 - mmseg - INFO - 
+backbone.stages.2.blocks.12.ffn.layers.0.0.bias - torch.Size([2048]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,925 - mmseg - INFO - 
+backbone.stages.2.blocks.12.ffn.layers.1.weight - torch.Size([512, 2048]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,925 - mmseg - INFO - 
+backbone.stages.2.blocks.12.ffn.layers.1.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,925 - mmseg - INFO - 
+backbone.stages.2.blocks.13.norm1.weight - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,925 - mmseg - INFO - 
+backbone.stages.2.blocks.13.norm1.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,925 - mmseg - INFO - 
+backbone.stages.2.blocks.13.attn.w_msa.relative_position_bias_table - torch.Size([529, 16]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,925 - mmseg - INFO - 
+backbone.stages.2.blocks.13.attn.w_msa.qkv.weight - torch.Size([1536, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,925 - mmseg - INFO - 
+backbone.stages.2.blocks.13.attn.w_msa.qkv.bias - torch.Size([1536]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,925 - mmseg - INFO - 
+backbone.stages.2.blocks.13.attn.w_msa.proj.weight - torch.Size([512, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,925 - mmseg - INFO - 
+backbone.stages.2.blocks.13.attn.w_msa.proj.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,925 - mmseg - INFO - 
+backbone.stages.2.blocks.13.norm2.weight - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,925 - mmseg - INFO - 
+backbone.stages.2.blocks.13.norm2.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,925 - mmseg - INFO - 
+backbone.stages.2.blocks.13.ffn.layers.0.0.weight - torch.Size([2048, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,925 - mmseg - INFO - 
+backbone.stages.2.blocks.13.ffn.layers.0.0.bias - torch.Size([2048]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,925 - mmseg - INFO - 
+backbone.stages.2.blocks.13.ffn.layers.1.weight - torch.Size([512, 2048]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,926 - mmseg - INFO - 
+backbone.stages.2.blocks.13.ffn.layers.1.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,926 - mmseg - INFO - 
+backbone.stages.2.blocks.14.norm1.weight - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,926 - mmseg - INFO - 
+backbone.stages.2.blocks.14.norm1.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,926 - mmseg - INFO - 
+backbone.stages.2.blocks.14.attn.w_msa.relative_position_bias_table - torch.Size([529, 16]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,926 - mmseg - INFO - 
+backbone.stages.2.blocks.14.attn.w_msa.qkv.weight - torch.Size([1536, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,926 - mmseg - INFO - 
+backbone.stages.2.blocks.14.attn.w_msa.qkv.bias - torch.Size([1536]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,926 - mmseg - INFO - 
+backbone.stages.2.blocks.14.attn.w_msa.proj.weight - torch.Size([512, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,926 - mmseg - INFO - 
+backbone.stages.2.blocks.14.attn.w_msa.proj.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,926 - mmseg - INFO - 
+backbone.stages.2.blocks.14.norm2.weight - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,926 - mmseg - INFO - 
+backbone.stages.2.blocks.14.norm2.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,926 - mmseg - INFO - 
+backbone.stages.2.blocks.14.ffn.layers.0.0.weight - torch.Size([2048, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,926 - mmseg - INFO - 
+backbone.stages.2.blocks.14.ffn.layers.0.0.bias - torch.Size([2048]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,926 - mmseg - INFO - 
+backbone.stages.2.blocks.14.ffn.layers.1.weight - torch.Size([512, 2048]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,926 - mmseg - INFO - 
+backbone.stages.2.blocks.14.ffn.layers.1.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,926 - mmseg - INFO - 
+backbone.stages.2.blocks.15.norm1.weight - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,926 - mmseg - INFO - 
+backbone.stages.2.blocks.15.norm1.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,926 - mmseg - INFO - 
+backbone.stages.2.blocks.15.attn.w_msa.relative_position_bias_table - torch.Size([529, 16]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,926 - mmseg - INFO - 
+backbone.stages.2.blocks.15.attn.w_msa.qkv.weight - torch.Size([1536, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,926 - mmseg - INFO - 
+backbone.stages.2.blocks.15.attn.w_msa.qkv.bias - torch.Size([1536]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,926 - mmseg - INFO - 
+backbone.stages.2.blocks.15.attn.w_msa.proj.weight - torch.Size([512, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,926 - mmseg - INFO - 
+backbone.stages.2.blocks.15.attn.w_msa.proj.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,926 - mmseg - INFO - 
+backbone.stages.2.blocks.15.norm2.weight - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,927 - mmseg - INFO - 
+backbone.stages.2.blocks.15.norm2.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,927 - mmseg - INFO - 
+backbone.stages.2.blocks.15.ffn.layers.0.0.weight - torch.Size([2048, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,927 - mmseg - INFO - 
+backbone.stages.2.blocks.15.ffn.layers.0.0.bias - torch.Size([2048]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,927 - mmseg - INFO - 
+backbone.stages.2.blocks.15.ffn.layers.1.weight - torch.Size([512, 2048]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,927 - mmseg - INFO - 
+backbone.stages.2.blocks.15.ffn.layers.1.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,927 - mmseg - INFO - 
+backbone.stages.2.blocks.16.norm1.weight - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,927 - mmseg - INFO - 
+backbone.stages.2.blocks.16.norm1.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,927 - mmseg - INFO - 
+backbone.stages.2.blocks.16.attn.w_msa.relative_position_bias_table - torch.Size([529, 16]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,927 - mmseg - INFO - 
+backbone.stages.2.blocks.16.attn.w_msa.qkv.weight - torch.Size([1536, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,927 - mmseg - INFO - 
+backbone.stages.2.blocks.16.attn.w_msa.qkv.bias - torch.Size([1536]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,927 - mmseg - INFO - 
+backbone.stages.2.blocks.16.attn.w_msa.proj.weight - torch.Size([512, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,927 - mmseg - INFO - 
+backbone.stages.2.blocks.16.attn.w_msa.proj.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,927 - mmseg - INFO - 
+backbone.stages.2.blocks.16.norm2.weight - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,927 - mmseg - INFO - 
+backbone.stages.2.blocks.16.norm2.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,927 - mmseg - INFO - 
+backbone.stages.2.blocks.16.ffn.layers.0.0.weight - torch.Size([2048, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,928 - mmseg - INFO - 
+backbone.stages.2.blocks.16.ffn.layers.0.0.bias - torch.Size([2048]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,928 - mmseg - INFO - 
+backbone.stages.2.blocks.16.ffn.layers.1.weight - torch.Size([512, 2048]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,928 - mmseg - INFO - 
+backbone.stages.2.blocks.16.ffn.layers.1.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,928 - mmseg - INFO - 
+backbone.stages.2.blocks.17.norm1.weight - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,928 - mmseg - INFO - 
+backbone.stages.2.blocks.17.norm1.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,928 - mmseg - INFO - 
+backbone.stages.2.blocks.17.attn.w_msa.relative_position_bias_table - torch.Size([529, 16]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,928 - mmseg - INFO - 
+backbone.stages.2.blocks.17.attn.w_msa.qkv.weight - torch.Size([1536, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,928 - mmseg - INFO - 
+backbone.stages.2.blocks.17.attn.w_msa.qkv.bias - torch.Size([1536]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,928 - mmseg - INFO - 
+backbone.stages.2.blocks.17.attn.w_msa.proj.weight - torch.Size([512, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,928 - mmseg - INFO - 
+backbone.stages.2.blocks.17.attn.w_msa.proj.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,928 - mmseg - INFO - 
+backbone.stages.2.blocks.17.norm2.weight - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,928 - mmseg - INFO - 
+backbone.stages.2.blocks.17.norm2.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,928 - mmseg - INFO - 
+backbone.stages.2.blocks.17.ffn.layers.0.0.weight - torch.Size([2048, 512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,928 - mmseg - INFO - 
+backbone.stages.2.blocks.17.ffn.layers.0.0.bias - torch.Size([2048]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,928 - mmseg - INFO - 
+backbone.stages.2.blocks.17.ffn.layers.1.weight - torch.Size([512, 2048]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,928 - mmseg - INFO - 
+backbone.stages.2.blocks.17.ffn.layers.1.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,928 - mmseg - INFO - 
+backbone.stages.2.downsample.norm.weight - torch.Size([2048]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,928 - mmseg - INFO - 
+backbone.stages.2.downsample.norm.bias - torch.Size([2048]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,928 - mmseg - INFO - 
+backbone.stages.2.downsample.reduction.weight - torch.Size([1024, 2048]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,928 - mmseg - INFO - 
+backbone.stages.3.blocks.0.norm1.weight - torch.Size([1024]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,929 - mmseg - INFO - 
+backbone.stages.3.blocks.0.norm1.bias - torch.Size([1024]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,929 - mmseg - INFO - 
+backbone.stages.3.blocks.0.attn.w_msa.relative_position_bias_table - torch.Size([529, 32]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,929 - mmseg - INFO - 
+backbone.stages.3.blocks.0.attn.w_msa.qkv.weight - torch.Size([3072, 1024]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,929 - mmseg - INFO - 
+backbone.stages.3.blocks.0.attn.w_msa.qkv.bias - torch.Size([3072]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,929 - mmseg - INFO - 
+backbone.stages.3.blocks.0.attn.w_msa.proj.weight - torch.Size([1024, 1024]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,929 - mmseg - INFO - 
+backbone.stages.3.blocks.0.attn.w_msa.proj.bias - torch.Size([1024]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,929 - mmseg - INFO - 
+backbone.stages.3.blocks.0.norm2.weight - torch.Size([1024]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,929 - mmseg - INFO - 
+backbone.stages.3.blocks.0.norm2.bias - torch.Size([1024]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,929 - mmseg - INFO - 
+backbone.stages.3.blocks.0.ffn.layers.0.0.weight - torch.Size([4096, 1024]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,929 - mmseg - INFO - 
+backbone.stages.3.blocks.0.ffn.layers.0.0.bias - torch.Size([4096]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,929 - mmseg - INFO - 
+backbone.stages.3.blocks.0.ffn.layers.1.weight - torch.Size([1024, 4096]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,929 - mmseg - INFO - 
+backbone.stages.3.blocks.0.ffn.layers.1.bias - torch.Size([1024]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,929 - mmseg - INFO - 
+backbone.stages.3.blocks.1.norm1.weight - torch.Size([1024]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,929 - mmseg - INFO - 
+backbone.stages.3.blocks.1.norm1.bias - torch.Size([1024]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,929 - mmseg - INFO - 
+backbone.stages.3.blocks.1.attn.w_msa.relative_position_bias_table - torch.Size([529, 32]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,930 - mmseg - INFO - 
+backbone.stages.3.blocks.1.attn.w_msa.qkv.weight - torch.Size([3072, 1024]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,930 - mmseg - INFO - 
+backbone.stages.3.blocks.1.attn.w_msa.qkv.bias - torch.Size([3072]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,930 - mmseg - INFO - 
+backbone.stages.3.blocks.1.attn.w_msa.proj.weight - torch.Size([1024, 1024]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,930 - mmseg - INFO - 
+backbone.stages.3.blocks.1.attn.w_msa.proj.bias - torch.Size([1024]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,930 - mmseg - INFO - 
+backbone.stages.3.blocks.1.norm2.weight - torch.Size([1024]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,930 - mmseg - INFO - 
+backbone.stages.3.blocks.1.norm2.bias - torch.Size([1024]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,930 - mmseg - INFO - 
+backbone.stages.3.blocks.1.ffn.layers.0.0.weight - torch.Size([4096, 1024]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,930 - mmseg - INFO - 
+backbone.stages.3.blocks.1.ffn.layers.0.0.bias - torch.Size([4096]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,930 - mmseg - INFO - 
+backbone.stages.3.blocks.1.ffn.layers.1.weight - torch.Size([1024, 4096]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,930 - mmseg - INFO - 
+backbone.stages.3.blocks.1.ffn.layers.1.bias - torch.Size([1024]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,930 - mmseg - INFO - 
+backbone.norm0.weight - torch.Size([128]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,930 - mmseg - INFO - 
+backbone.norm0.bias - torch.Size([128]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,930 - mmseg - INFO - 
+backbone.norm1.weight - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,930 - mmseg - INFO - 
+backbone.norm1.bias - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,930 - mmseg - INFO - 
+backbone.norm2.weight - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,930 - mmseg - INFO - 
+backbone.norm2.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,931 - mmseg - INFO - 
+backbone.norm3.weight - torch.Size([1024]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,931 - mmseg - INFO - 
+backbone.norm3.bias - torch.Size([1024]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,931 - mmseg - INFO - 
+decode_head.0.conv_seg.weight - torch.Size([11, 1920, 1, 1]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,931 - mmseg - INFO - 
+decode_head.0.conv_seg.bias - torch.Size([11]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,931 - mmseg - INFO - 
+decode_head.0.convs.0.conv.weight - torch.Size([1920, 1920, 1, 1]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,931 - mmseg - INFO - 
+decode_head.0.convs.0.bn.weight - torch.Size([1920]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,931 - mmseg - INFO - 
+decode_head.0.convs.0.bn.bias - torch.Size([1920]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,931 - mmseg - INFO - 
+decode_head.1.conv_seg.weight - torch.Size([11, 512, 1, 1]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,931 - mmseg - INFO - 
+decode_head.1.conv_seg.bias - torch.Size([11]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,931 - mmseg - INFO - 
+decode_head.1.object_context_block.key_project.0.conv.weight - torch.Size([256, 512, 1, 1]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,931 - mmseg - INFO - 
+decode_head.1.object_context_block.key_project.0.bn.weight - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,931 - mmseg - INFO - 
+decode_head.1.object_context_block.key_project.0.bn.bias - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,931 - mmseg - INFO - 
+decode_head.1.object_context_block.key_project.1.conv.weight - torch.Size([256, 256, 1, 1]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,931 - mmseg - INFO - 
+decode_head.1.object_context_block.key_project.1.bn.weight - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,932 - mmseg - INFO - 
+decode_head.1.object_context_block.key_project.1.bn.bias - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,932 - mmseg - INFO - 
+decode_head.1.object_context_block.query_project.0.conv.weight - torch.Size([256, 512, 1, 1]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,932 - mmseg - INFO - 
+decode_head.1.object_context_block.query_project.0.bn.weight - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,932 - mmseg - INFO - 
+decode_head.1.object_context_block.query_project.0.bn.bias - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,932 - mmseg - INFO - 
+decode_head.1.object_context_block.query_project.1.conv.weight - torch.Size([256, 256, 1, 1]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,932 - mmseg - INFO - 
+decode_head.1.object_context_block.query_project.1.bn.weight - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,932 - mmseg - INFO - 
+decode_head.1.object_context_block.query_project.1.bn.bias - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,932 - mmseg - INFO - 
+decode_head.1.object_context_block.value_project.conv.weight - torch.Size([256, 512, 1, 1]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,932 - mmseg - INFO - 
+decode_head.1.object_context_block.value_project.bn.weight - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,932 - mmseg - INFO - 
+decode_head.1.object_context_block.value_project.bn.bias - torch.Size([256]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,932 - mmseg - INFO - 
+decode_head.1.object_context_block.out_project.conv.weight - torch.Size([512, 256, 1, 1]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,932 - mmseg - INFO - 
+decode_head.1.object_context_block.out_project.bn.weight - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,932 - mmseg - INFO - 
+decode_head.1.object_context_block.out_project.bn.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,932 - mmseg - INFO - 
+decode_head.1.object_context_block.bottleneck.conv.weight - torch.Size([512, 1024, 1, 1]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,932 - mmseg - INFO - 
+decode_head.1.object_context_block.bottleneck.bn.weight - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,933 - mmseg - INFO - 
+decode_head.1.object_context_block.bottleneck.bn.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,933 - mmseg - INFO - 
+decode_head.1.bottleneck.conv.weight - torch.Size([512, 1920, 3, 3]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,933 - mmseg - INFO - 
+decode_head.1.bottleneck.bn.weight - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:06,933 - mmseg - INFO - 
+decode_head.1.bottleneck.bn.bias - torch.Size([512]): 
+The value is the same before and after calling `init_weights` of CascadeEncoderDecoder  
+ 
+2021-10-29 04:21:11,119 - mmseg - INFO - Loaded 655 images
+2021-10-29 04:21:11,120 - mmseg - INFO - Start running, host: root@e88fd0f95cf8, work_dir: /opt/ml/semantic-segmentation-level2-cv-07/mmsegmentation/work_dirs/swin_ocr_pretrained_test_102913
+2021-10-29 04:21:11,120 - mmseg - INFO - Hooks will be executed in the following order:
+before_run:
+(VERY_HIGH   ) CosineAnnealingLrUpdaterHook       
+(NORMAL      ) CheckpointHook                     
+(LOW         ) EvalHook                           
+(VERY_LOW    ) TextLoggerHook                     
+(VERY_LOW    ) EpochWandbLogger                   
+ -------------------- 
+before_train_epoch:
+(VERY_HIGH   ) CosineAnnealingLrUpdaterHook       
+(LOW         ) IterTimerHook                      
+(LOW         ) EvalHook                           
+(VERY_LOW    ) TextLoggerHook                     
+(VERY_LOW    ) EpochWandbLogger                   
+ -------------------- 
+before_train_iter:
+(VERY_HIGH   ) CosineAnnealingLrUpdaterHook       
+(LOW         ) IterTimerHook                      
+(LOW         ) EvalHook                           
+ -------------------- 
+after_train_iter:
+(ABOVE_NORMAL) OptimizerHook                      
+(NORMAL      ) CheckpointHook                     
+(LOW         ) IterTimerHook                      
+(LOW         ) EvalHook                           
+(VERY_LOW    ) TextLoggerHook                     
+(VERY_LOW    ) EpochWandbLogger                   
+ -------------------- 
+after_train_epoch:
+(NORMAL      ) CheckpointHook                     
+(LOW         ) EvalHook                           
+(VERY_LOW    ) TextLoggerHook                     
+(VERY_LOW    ) EpochWandbLogger                   
+ -------------------- 
+before_val_epoch:
+(LOW         ) IterTimerHook                      
+(VERY_LOW    ) TextLoggerHook                     
+(VERY_LOW    ) EpochWandbLogger                   
+ -------------------- 
+before_val_iter:
+(LOW         ) IterTimerHook                      
+ -------------------- 
+after_val_iter:
+(LOW         ) IterTimerHook                      
+ -------------------- 
+after_val_epoch:
+(VERY_LOW    ) TextLoggerHook                     
+(VERY_LOW    ) EpochWandbLogger                   
+ -------------------- 
+after_run:
+(VERY_LOW    ) EpochWandbLogger                   
+ -------------------- 
+2021-10-29 04:21:11,121 - mmseg - INFO - workflow: [('train', 1), ('val', 1)], max: 50 epochs
+wandb: Currently logged in as: realbro (use `wandb login --relogin` to force relogin)
+wandb: wandb version 0.12.6 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.12.5
+wandb: Syncing run swin_ocr_pretrained_test_102913
+wandb:  View project at https://wandb.ai/realbro/segmentation
+wandb:  View run at https://wandb.ai/realbro/segmentation/runs/2203usv0
+wandb: Run data is saved locally in /opt/ml/semantic-segmentation-level2-cv-07/mmsegmentation/wandb/run-20211029_042111-2203usv0
+wandb: Run `wandb offline` to turn off syncing.
+
+Traceback (most recent call last):
+  File "train.py", line 35, in <module>
+    train_segmentor(model, datasets, cfg, distributed=False, validate=True)
+  File "/opt/ml/semantic-segmentation-level2-cv-07/mmsegmentation/mmseg/apis/train.py", line 120, in train_segmentor
+    runner.run(data_loaders, cfg.workflow)
+  File "/opt/conda/envs/segmentation/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 127, in run
+    epoch_runner(data_loaders[i], **kwargs)
+  File "/opt/conda/envs/segmentation/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 51, in train
+    self.call_hook('after_train_iter')
+  File "/opt/conda/envs/segmentation/lib/python3.7/site-packages/mmcv/runner/base_runner.py", line 307, in call_hook
+    getattr(hook, fn_name)(self)
+  File "/opt/conda/envs/segmentation/lib/python3.7/site-packages/mmcv/runner/hooks/optimizer.py", line 35, in after_train_iter
+    runner.outputs['loss'].backward()
+  File "/opt/conda/envs/segmentation/lib/python3.7/site-packages/torch/tensor.py", line 221, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph)
+  File "/opt/conda/envs/segmentation/lib/python3.7/site-packages/torch/autograd/__init__.py", line 132, in backward
+    allow_unreachable=True)  # allow_unreachable flag
+KeyboardInterrupt
+wandb: ERROR Control-C detected -- Run data was not synced
+/opt/conda/envs/segmentation/lib/python3.7/multiprocessing/semaphore_tracker.py:144: UserWarning: semaphore_tracker: There appear to be 6 leaked semaphores to clean up at shutdown
+  len(cache))
