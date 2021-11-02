@@ -80,7 +80,7 @@ if __name__ == '__main__':
     parser.add_argument(
         '--config', 
         type=pathlib.Path,
-        default='./config/__base__.json'
+        default='./config/deeplabv3_resnet50.json'
     )
     parser.add_argument(
         '--model', 

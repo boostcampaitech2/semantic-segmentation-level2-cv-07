@@ -24,5 +24,5 @@ def JsonConfig(file_path):
                 
                 
 if __name__ == '__main__':
-    cfg = JsonConfig(file_path='../config/__base__.json')
+    cfg = JsonConfig(file_path='../config/deeplabv3_resnet50.json')
     print(cfg)
