@@ -82,4 +82,4 @@ Install packages :  `pip install -r requirements.txt`
 | **심세령** [@Seryoung Shim](https://github.com/seryoungshim17)| 
 | **윤하정** [@Yoon Hajung](https://github.com/YHaJung)         | 
 
-## Data Citation ```네이버 커넥트재단 - 재활용 쓰레기 데이터셋 / CC BY 2.0```
+## Data Citation <br/> ```네이버 커넥트재단 - 재활용 쓰레기 데이터셋 / CC BY 2.0```
