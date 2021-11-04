@@ -80,16 +80,22 @@ def loadDataLoader(dataset_path, batch_size=8, num_workers=2, train=True):
     test_path = dataset_path + '/test.json'
     
     train_transform = A.Compose([
-                            ToTensorV2()
-                            ])
+                        # A.Resize(1024, 1024),
+                        A.RandomRotate90(),
+                        ToTensorV2()
+                    ])
 
     val_transform = A.Compose([
-                              ToTensorV2()
-                              ])
+                        # A.Resize(1024, 1024),
+                        A.RandomRotate90(),
+                        ToTensorV2()
+                    ])
 
     test_transform = A.Compose([
-                               ToTensorV2()
-                               ])
+                        # A.Resize(1024, 1024),
+                        A.RandomRotate90(),
+                        ToTensorV2()
+                    ])
     
     train_dataset = CustomDataset(dataset_path, train_path, mode='train', transform=train_transform)
     val_dataset = CustomDataset(dataset_path, val_path, mode='val', transform=val_transform)
