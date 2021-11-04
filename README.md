@@ -4,7 +4,7 @@
 
 ## Project Overview
 
-- **Predict Trash Objects**
+- **Trash semantic segmentation**
 - Input: 512 x 512 Image
   - Train: 2617 images
   - Validation: 655 images
