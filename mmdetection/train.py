@@ -1,3 +1,24 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[1]:
+
+
+# !apt-get update
+# !apt-get install -y libsm6 libxext6 libxrender-dev
+# !pip install opencv-python
+
+
+# In[2]:
+
+
+#!pip install openmim
+#!mim install mmdet
+
+
+# In[3]:
+
+
 # 모듈 import
 
 from mmcv import Config
@@ -7,22 +28,28 @@ from mmdet.apis import train_detector
 from mmdet.datasets import (build_dataloader, build_dataset,
                             replace_ImageToTensor)
 
+
+# In[4]:
+
+
 classes = ("General trash", "Paper", "Paper pack", "Metal", "Glass", 
            "Plastic", "Styrofoam", "Plastic bag", "Battery", "Clothing")
 
 # config file 들고오기
-cfg = Config.fromfile('./configs/_base_/my_train/cascade_rcnn_swin-t-p4-w7_fpn_40epo_coco.py')
+cfg = Config.fromfile('./configs/_base_/my_seg/swin_large.py')
 
 cfg.data.samples_per_gpu = 8
-cfg.data.workers_per_gpu = 8
+cfg.data.workers_per_gpu = 4
 
 cfg.seed = 2021
 cfg.gpu_ids = [0]
-cfg.work_dir = './work_dirs/small_various_anchor_swi_casca_cosann_PAFPN_ima_2048_low_propos'
+
+cfg.work_dir = './work_dirs/real_swin_large'
 
 cfg.model.roi_head.bbox_head[0].num_classes = 10
 cfg.model.roi_head.bbox_head[1].num_classes = 10
 cfg.model.roi_head.bbox_head[2].num_classes = 10
+cfg.model.roi_head.mask_head.num_classes = 10
 
 # image_size 변환 - default : (1024, 1024), 적용시 (2048, 2048)
 # cfg.train_pipeline[2].img_scale=(2048,2048)
@@ -60,30 +87,42 @@ cfg.model.roi_head.bbox_head[2].num_classes = 10
 
 cfg.optimizer_config.grad_clip = dict(max_norm=35, norm_type=2)
 cfg.checkpoint_config = dict(max_keep_ckpts=-1, interval=1)
-cfg.runner = dict(type='EpochBasedRunner', max_epochs=25)
+cfg.runner = dict(type='EpochBasedRunner', max_epochs=30)
 cfg.lr_config =  dict(
     policy='CosineAnnealing',
     warmup='linear',
-    warmup_iters=300,
+    warmup_iters=500,
     warmup_ratio=0.001,
     min_lr_ratio=1e-5,
 )
+
+# wandb log설정
 cfg.log_config = dict(
     interval=100,
     hooks=[
         dict(type='TextLoggerHook'),
         dict(type='EpochWandbLogger',
         init_kwargs=dict(
-            project='Swin_seg',
-            name='test'))
+            project='Swin-seg',
+            name='swin_base'))
 ])
-# wandb log설정
-# cfg.log_config.hooks[1].init_kwargs=dict(
-#             project='Swin',
-#             name='lowpropos_PA_sma,vari_anchor_img2048')
+cfg.workflow = workflow = [('train', 1),('val',1)]
+
+
+# In[5]:
+
 
 # build_dataset
-datasets = [build_dataset(cfg.data.train)] # build_dataset(cfg.data.val_loss)
+datasets = [build_dataset(cfg.data.train), build_dataset(cfg.data.val_loss)] # 
+
+
+# In[6]:
+
+
+datasets[0]
+
+
+# In[7]:
 
 
 # 모델 build 및 pretrained network 불러오기
@@ -91,5 +130,9 @@ model = build_detector(cfg.model)
 model.init_weights()
 
 
+# In[8]:
+
+
 # 모델 학습
-train_detector(model, datasets, cfg, distributed=False, validate=False)
+train_detector(model, datasets, cfg, distributed=False, validate=True)
+
