@@ -47,6 +47,8 @@ python inference.py
 ```
 cd util
 
+converting visualize_CSVs py to ipynb
+
 jupyter notebook visualize_CSVs.ipynb
 ```
 ```python
