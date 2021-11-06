@@ -5,7 +5,6 @@
 
 
 import os
-import mmcv
 
 from mmcv import Config
 from mmseg.datasets import build_dataloader, build_dataset
